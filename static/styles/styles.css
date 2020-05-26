@@ -1,0 +1,137 @@
+.main-logo {
+  height: 10vh;
+  max-width: 25vh;
+  float: left;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1.));
+}
+
+.main-logo-l {
+  height: 20vh;
+  max-width: 50vh;
+}
+
+.main-logo path, .main-logo-l path {
+  fill: #ff6600;
+}
+
+.xtra {
+  left: 20px;
+}
+
+
+.xtra2 {
+  position: absolute;
+    top: 60%;
+    left: -50%;
+    transform: translateX(-50%);
+    cursor: crosshair;
+    overflow: hidden;
+    white-space:nowrap;
+  
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow-x:hidden;
+}
+
+#total-body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  overflow-x: hidden;
+}
+
+* {
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 32px;
+  overflow-x:hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center-text {
+  margin-top: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+/*  Background fallback in case of IE8 & down, or in case video doens't load, such as with slower connections  */
+  background: #000;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* The only rule that matters */
+
+.square-box{
+    background: #000000;
+    height: 100vw;
+    width: 100vw;
+}
+
+#player, iframe, .square-box, .center-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#player, iframe{
+  width: 100%;
+  height: 100%;
+}
+
+.sm-link {
+  position: absolute;
+  bottom: 20px;
+  z-index: 101;
+  padding: 10px;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 100;
+}
+
+.hidden {
+    transition: visibility 2s, opacity 2s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.shown {
+    transition: visibility 2s, opacity 2s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.slide-in {
+    transition: left 2s;
+    left: 50%;
+}
+
+.slide-out {
+    transition: left 2s;
+    left: 150%;
+}
