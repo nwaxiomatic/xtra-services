@@ -21,12 +21,13 @@
 
 .xtra2 {
   position: absolute;
-    top: 60%;
+    top: 50%;
     left: -50%;
     transform: translateX(-50%);
     cursor: crosshair;
     overflow: hidden;
     white-space:nowrap;
+    padding-right: 3px;
   
 }
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
@@ -52,7 +53,7 @@
   overflow: hidden;
   color: white;
   text-align: center;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Open-Sans', sans-serif;
   font-weight: bold;
   font-style: italic;
   font-size: 32px;
@@ -127,11 +128,11 @@ body {
 }
 
 .slide-in {
-    transition: left 2s;
+    transition: left 1s;
     left: 50%;
 }
 
 .slide-out {
-    transition: left 2s;
+    transition: left 1s;
     left: 150%;
 }
